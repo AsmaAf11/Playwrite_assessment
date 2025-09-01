@@ -15,10 +15,11 @@ It uses Playwright to:
 1. Clone the Repository
 git clone https://github.com/AsmaAf11/Playwrite_assessment.git
 cd Playwrite_assessment
-2. Install Dependencies
+cd playwrite2
+3. Install Dependencies
 npm install
 This installs playwright and other required packages from package.json.
-3. Install Browsers
+4. Install Browsers
 npx playwright install
 This downloads the necessary browsers (Chromium, Firefox, WebKit).
 
