@@ -1,16 +1,7 @@
 // checkout.spec.js
 const { test, expect } = require('@playwright/test');
+const { getRandomIndexes } = require('./tests/helpers/utils');
 
-function getRandomIndexes(total, count) {
-    const indexes = [];
-    while (indexes.length < count) {
-      const rand = Math.floor(Math.random() * total);
-      if (!indexes.includes(rand)) {
-        indexes.push(rand);
-      }
-    }
-    return indexes;
-  }
 
 test('Successful checkout flow with 3 random items', async ({ page }) => {
   // Login
